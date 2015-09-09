@@ -14,8 +14,6 @@ document.getElementById("p2Name").innerHTML = player2;
 var xWinner = 0;
 var oWinner = 0;
 
-
-
 function addMarker(element) {
 	var elementId = element.getAttribute('id');
 	if (element.innerHTML == '') {
@@ -26,7 +24,7 @@ function addMarker(element) {
 			element.innerHTML = 'o';
 			oArray.push(elementId);
 		}
-	counter++;
+		counter++;
 	} else {
 		alert("You can't go there!");
 	}
@@ -81,14 +79,14 @@ function reset() {
 }
 
 var winningCombos = [
-	['box-0', 'box-1', 'box-2'],
-	['box-3', 'box-4', 'box-5'],
-	['box-6', 'box-7', 'box-8'],
-	['box-0', 'box-3', 'box-6'],
-	['box-1', 'box-4', 'box-7'],
-	['box-2', 'box-5', 'box-8'],
-	['box-0', 'box-4', 'box-8'],
-	['box-3', 'box-4', 'box-6'],
+['box-0', 'box-1', 'box-2'],
+['box-3', 'box-4', 'box-5'],
+['box-6', 'box-7', 'box-8'],
+['box-0', 'box-3', 'box-6'],
+['box-1', 'box-4', 'box-7'],
+['box-2', 'box-5', 'box-8'],
+['box-0', 'box-4', 'box-8'],
+['box-3', 'box-4', 'box-6'],
 ];
 
 
